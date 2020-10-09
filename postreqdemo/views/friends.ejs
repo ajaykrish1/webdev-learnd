@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+  <head>
+    
+    <title>Postinng stuff</title>
+  </head>
+  <body>
+    <h1>Friends List</h1>
+    <ul>
+        <li>Jason</li>
+        <li>Raunaq</li>
+        <li>Ritesh</li>
+        <li>Ritika</li>
+        <%for(var i=0;i< friends.length;i++)
+        {%>
+            <li><%=friends[i]%></li>
+        <%}%>
+    </ul>
+    <form action="/addfriend" method="POST">
+        <label for="">New Friends</label>
+        <input type="text" name="newfriend">
+        <input type="Submit" >
+
+    </form>
+  </body>
+</html>
